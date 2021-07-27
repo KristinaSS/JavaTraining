@@ -1,4 +1,4 @@
-package com.company.multithreading.generalexample;
+package com.company.javacore.multithreading.generalexample;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

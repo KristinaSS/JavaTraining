@@ -1,4 +1,4 @@
-package com.company.appexecutionandenvironment;
+package com.company.javacore.appexecutionandenvironment;
 
 import java.io.BufferedReader;
 import java.nio.file.Files;

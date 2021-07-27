@@ -1,4 +1,4 @@
-package com.company.reflection;
+package com.company.javacore.reflection;
 
 public class BankAccount {
     private final String id;

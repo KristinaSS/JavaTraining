@@ -1,4 +1,4 @@
-package com.company.multithreading.bankexample;
+package com.company.javacore.multithreading.bankexample;
 
 public class BankAccount {
     private int balance;

@@ -1,5 +1,7 @@
-package com.company.reflection;
+package com.company.javacore.reflection;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
 public class Main {
@@ -60,5 +62,41 @@ public class Main {
             System.out.println("method check - public");
         }
         //more modifiers
+    }
+
+    private void fieldInfo (Object obj) {
+        Class<?> theClass = obj.getClass();
+        Field[] fields = theClass.getFields();
+        displayFields(fields);
+
+        Field[] declaredFields = theClass.getDeclaredFields();
+        displayFields(declaredFields);
+
+    }
+
+    private void displayFields(Field[] arr ){
+        for(Field f : arr){
+            System.out.println(f.getName() + " : " + f.getType());
+        }
+    }
+
+    private void displayMethods(Method[] arr ){
+        for(Method f : arr){
+            System.out.println(f.getName());
+        }
+    }
+
+    private void methodInfo(Object ob){
+        Class<?> theClass = ob.getClass();
+        Method[] methods = theClass.getMethods();
+        displayMethods(methods);
+
+        Method[] declaredMethods = theClass.getDeclaredMethods();
+        displayMethods(declaredMethods);
+
+        /*
+        * can exclude object like this:
+        * if(method.getDeclaredClass() != Object.class)
+        */
     }
 }

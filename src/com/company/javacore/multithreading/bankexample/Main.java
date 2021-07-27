@@ -1,4 +1,4 @@
-package com.company.multithreading.bankexample;
+package com.company.javacore.multithreading.bankexample;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
